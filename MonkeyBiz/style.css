@@ -1,0 +1,61 @@
+/* font and color pallate */
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+/* bakgrund */
+
+body{}
+
+.kontainer{}
+
+/* headers utseende och funktion */
+header{}
+
+header h1{}
+
+nav{}
+
+nav a{}
+
+nav a:hover{}
+
+
+/* mains utseende och funktion  */
+
+main{}
+
+main h2{}
+
+main figure{}
+
+main figure img{}
+
+main figure figcaption{}
+
+main p{}
+
+main button{}
+
+/* asides utseende och funktion */
+
+aside{}
+
+aside p{}
+
+/* footers utseende och funktion */
+
+footer{}
+
+footer p{}
