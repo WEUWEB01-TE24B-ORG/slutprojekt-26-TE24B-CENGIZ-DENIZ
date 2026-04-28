@@ -1,4 +1,17 @@
-/* font and color pallate */
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Kablammo&display=swap');
+:root {
+    --dark-amethyst: #10002bff;
+    --dark-amethyst-2: #240046ff;
+    --indigo-ink: #3c096cff;
+    --indigo-velvet: #5a189aff;
+    --royal-violet: #7b2cbfff;
+    --lavender-purple: #9d4eddff;
+    --mauve-magic: #c77dffff;
+    --mauve: #e0aaffff;
+}
+
+
+
 /* try smthng other then px */
 
 /* Enkel CSS-reset */
@@ -32,14 +45,14 @@ img {
 /* bakgrund */
 
 body {
-    background-color: #d22ebf;
+   background: greenyellow;
 }
 
 .kontainer {
 
     width: 1000px;
     margin: auto;
-    background: #000;
+    background: #681010;
 }
 
 /* headers utseende och funktion */
@@ -47,23 +60,28 @@ header {
 
     width: 900px;
     border-radius: 4px;
-    margin: auto ;
-    background: #705d5d;
+    margin: auto;
+    background: greenyellow;
+    height: 100px;
+    margin-bottom: 20px;
+    
 
 }
 
 header h1 {
     font-size: 50px;
-    
+   font-family: "Kablammo", system-ui;
     text-align: center;
 }
 
 nav {
-   text-align: center;
+    text-align: center;
 }
 
 nav a {
     border-radius: 3px;
+    color: var(--indigo-velvet);
+    font-family: "Kablammo", system-ui;
 }
 
 nav a:hover {
@@ -76,22 +94,37 @@ nav a:hover {
 main {
     width: 600px;
     border-radius: 4px;
+    margin: auto;
 }
 
 main h2 {
     font-size: 40px;
+    font-family: "Flavors", cursive;
+    color: var(--mauve);
+    margin-left: 40px;
 }
 
 main figure {}
 
 main figure img {}
 
-main figure figcaption {}
+main figure figcaption {
+    text-align: center;
+    font-size: 3lh;
+    font-family: "Flavors", cursive;
+    color: greenyellow;
 
-main p {}
+}
+
+main p {
+    font-family: "Flavors", cursive;
+    text-align: center;
+    font-size: 30px;
+}
 
 main button {
     background-color: black;
+    margin-left: 30%;
 }
 
 /* asides utseende och funktion */
