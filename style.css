@@ -50,14 +50,16 @@ body {
 
 .kontainer {
 
-    width: 1000px;
+    width: 1400px;
     margin: auto;
     background: #681010;
+   
+    
 }
 
 /* headers utseende och funktion */
 header {
-
+   
     width: 900px;
     border-radius: 4px;
     margin: auto;
@@ -65,7 +67,6 @@ header {
     height: 100px;
     margin-bottom: 20px;
     
-
 }
 
 header h1 {
@@ -110,7 +111,7 @@ main figure img {}
 
 main figure figcaption {
     text-align: center;
-    font-size: 3lh;
+    font-size: 2lh;
     font-family: "Flavors", cursive;
     color: greenyellow;
 
@@ -120,11 +121,17 @@ main p {
     font-family: "Flavors", cursive;
     text-align: center;
     font-size: 30px;
+    color: #fff;
+    
 }
 
 main button {
-    background-color: black;
-    margin-left: 30%;
+    background-color: rgb(3, 149, 168);
+    margin-left: 20%;
+    margin-bottom: 20px;
+    color: var(--indigo-velvet) ;
+    font-size: 1.2lh;
+    font-family: "Flavors", cursive;
 }
 
 /* asides utseende och funktion */
@@ -140,8 +147,8 @@ aside p {}
 /* footers utseende och funktion */
 
 footer {
-    border-radius: 4px;
-    background-color: blueviolet;
+    border-radius: 4px; 
+     background: rgb(207, 151, 68);
 }
 
 footer p {}
