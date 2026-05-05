@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Flavors&family=Kablammo&display=swap');
+
 :root {
     --dark-amethyst: #10002bff;
     --dark-amethyst-2: #240046ff;
@@ -45,7 +46,7 @@ img {
 /* bakgrund */
 
 body {
-   background: greenyellow;
+    background-image: url(./bilder/bg\ 5.webp);
 }
 
 .kontainer {
@@ -53,40 +54,51 @@ body {
     width: 1400px;
     margin: auto;
     background: #681010;
-   
-    
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer"
+    ;
+    border-radius: 0.2cm;
+
+
 }
 
 /* headers utseende och funktion */
 header {
-   
+
     width: 900px;
     border-radius: 4px;
     margin: auto;
     background: greenyellow;
     height: 100px;
     margin-bottom: 20px;
-    
+    grid-area: header;
+
 }
 
 header h1 {
     font-size: 50px;
-   font-family: "Kablammo", system-ui;
+    font-family: "Kablammo", system-ui;
     text-align: center;
 }
 
 nav {
     text-align: center;
+    
 }
 
 nav a {
     border-radius: 3px;
     color: var(--indigo-velvet);
     font-family: "Kablammo", system-ui;
+    margin-right: 20px;
+    background: lightcoral;
 }
 
 nav a:hover {
-    background-color: yellowgreen;
+    background-color: lightskyblue;
 }
 
 
@@ -96,6 +108,10 @@ main {
     width: 600px;
     border-radius: 4px;
     margin: auto;
+    grid-area: main;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    
 }
 
 main h2 {
@@ -122,14 +138,14 @@ main p {
     text-align: center;
     font-size: 30px;
     color: #fff;
-    
+
 }
 
 main button {
     background-color: rgb(3, 149, 168);
     margin-left: 20%;
     margin-bottom: 20px;
-    color: var(--indigo-velvet) ;
+    color: var(--indigo-velvet);
     font-size: 1.2lh;
     font-family: "Flavors", cursive;
 }
@@ -137,18 +153,34 @@ main button {
 /* asides utseende och funktion */
 
 aside {
-    width: 300px;
+    width: 200px;
     border-radius: 4px;
-    background-color: plum;
+    background: lightseagreen;
+    grid-area: aside;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    
 }
 
-aside p {}
+aside p {
+    font-family: "Flavors", cursive;
+    font-size: 2lh;
+    color: var(--dark-amethyst);
+}
 
 /* footers utseende och funktion */
 
 footer {
-    border-radius: 4px; 
-     background: rgb(207, 151, 68);
+    height: 50px;
+    border-radius: 4px;
+    background: var(--lavender-purple);
+    grid-area: footer;
+    margin-top: 20px;
 }
 
-footer p {}
+footer p {
+    font-size: 30px;
+     font-family: "Flavors", cursive;
+     color: skyblue;
+     text-align: center;
+}
