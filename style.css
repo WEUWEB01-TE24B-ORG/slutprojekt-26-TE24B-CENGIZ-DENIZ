@@ -63,6 +63,7 @@ body {
     border-radius: 0.2cm;
 
 
+
 }
 
 /* headers utseende och funktion */
@@ -86,7 +87,7 @@ header h1 {
 
 nav {
     text-align: center;
-    
+
 }
 
 nav a {
@@ -111,7 +112,7 @@ main {
     grid-area: main;
     margin-left: 250px;
     margin-bottom: 20px;
-    
+
 }
 
 main h2 {
@@ -159,7 +160,7 @@ aside {
     grid-area: aside;
     margin-right: 150px;
     margin-bottom: 20px;
-    
+
 }
 
 aside p {
@@ -180,7 +181,33 @@ footer {
 
 footer p {
     font-size: 30px;
-     font-family: "Flavors", cursive;
-     color: skyblue;
-     text-align: center;
+    font-family: "Flavors", cursive;
+    color: skyblue;
+    text-align: center;
 }
+
+
+
+@media (max-width: 430px) {
+
+    .kontainer {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer"
+        ;
+        background-color: #10002bff;
+
+
+    }
+
+    aside {
+        width: 400px;
+        margin-left: 400px;
+    }
+
+
+}
+
+
