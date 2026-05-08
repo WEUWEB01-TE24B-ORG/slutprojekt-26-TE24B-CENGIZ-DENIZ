@@ -96,6 +96,8 @@ nav a {
     font-family: "Kablammo", system-ui;
     margin-right: 20px;
     background: lightcoral;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -190,6 +192,8 @@ footer p {
 
 @media (max-width: 430px) {
 
+    
+
     .kontainer {
         grid-template-areas:
             "header"
@@ -198,21 +202,22 @@ footer p {
             "footer"
         ;
         background-color: #10002bff;
-
-
+        width: 80%;
     }
+
 
     aside {
-        width: 400px;
-        margin-left: 400px;
+        width: 80%;
+        
     }
+    
 
 
 }
 
-@media (min-width: 768px) {
+@media ( min-width: 768px) {
     .kontainer{
-        
+        width: 1200px;
     }
     
 }
