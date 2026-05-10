@@ -47,7 +47,7 @@ img {
     width: 100%;
 }
 
-/* bacround */
+/* background */
 
 
 body {
@@ -59,11 +59,6 @@ body {
     width: 1400px;
     background: #681010;
     display: grid;
-    grid-template-areas:
-        "header header"
-        "main aside"
-        "footer footer"
-    ;
     border-radius: 0.2cm;
 
 
@@ -131,7 +126,7 @@ main h2 {
     margin-left: 40px;
 }
 
-main figure {}
+
 
 main figure img {
     padding: 10px;
