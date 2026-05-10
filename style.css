@@ -1,5 +1,9 @@
+
+
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Flavors&family=Kablammo&display=swap');
 
+/* color palate */
 :root {
     --dark-amethyst: #10002bff;
     --dark-amethyst-2: #240046ff;
@@ -13,7 +17,7 @@
 
 
 
-/* try smthng other then px */
+
 
 /* Enkel CSS-reset */
 html {
@@ -43,7 +47,8 @@ img {
     width: 100%;
 }
 
-/* bakgrund */
+/* bacround */
+
 
 body {
     background-image: url(./bilder/bg\ 5.webp);
@@ -52,7 +57,6 @@ body {
 .kontainer {
 
     width: 1400px;
-    margin: auto;
     background: #681010;
     display: grid;
     grid-template-areas:
@@ -66,7 +70,7 @@ body {
 
 }
 
-/* headers utseende och funktion */
+/* headers look and function */
 header {
 
     width: 900px;
@@ -76,6 +80,7 @@ header {
     height: 100px;
     margin-bottom: 20px;
     grid-area: header;
+   
 
 }
 
@@ -83,10 +88,12 @@ header h1 {
     font-size: 50px;
     font-family: "Kablammo", system-ui;
     text-align: center;
+    
 }
 
 nav {
     text-align: center;
+
 
 }
 
@@ -95,7 +102,7 @@ nav a {
     color: var(--indigo-velvet);
     font-family: "Kablammo", system-ui;
     margin-right: 20px;
-    background: lightcoral;
+    background: darkgrey;
     font-size: 20px;
     text-decoration: none;
 }
@@ -105,7 +112,7 @@ nav a:hover {
 }
 
 
-/* mains utseende och funktion  */
+/* mains look and function  */
 
 main {
     width: 600px;
@@ -126,7 +133,9 @@ main h2 {
 
 main figure {}
 
-main figure img {}
+main figure img {
+    padding: 10px;
+}
 
 main figure figcaption {
     text-align: center;
@@ -153,7 +162,7 @@ main button {
     font-family: "Flavors", cursive;
 }
 
-/* asides utseende och funktion */
+/* asides look and function */
 
 aside {
     width: 200px;
@@ -171,7 +180,7 @@ aside p {
     color: var(--dark-amethyst);
 }
 
-/* footers utseende och funktion */
+/* footers look and function */
 
 footer {
     height: 50px;
@@ -188,11 +197,9 @@ footer p {
     text-align: center;
 }
 
-
+/* look for phone */
 
 @media (max-width: 430px) {
-
-    
 
     .kontainer {
         grid-template-areas:
@@ -201,23 +208,49 @@ footer p {
             "aside"
             "footer"
         ;
-        background-color: #10002bff;
-        width: 80%;
     }
-
 
     aside {
-        width: 80%;
+        margin-left: 25lh;
+    }
+
+    header {
+        margin-left: 106px;
+    }
+}
+
+/* look for tablet */
+@media (min-width: 768px) {
+    .kontainer {
+        grid-template-areas:
+            "header header"
+            "main aside"
+            "footer footer"
+        ;
         
+        margin-right: 30px;
+   
     }
-    
 
+  
 
 }
 
-@media ( min-width: 768px) {
-    .kontainer{
-        width: 1200px;
+
+/* look on conputers */
+@media (min-width: 1024px) {
+      .kontainer {
+        grid-template-areas:
+            "header header"
+            "main aside"
+            "footer footer"
+        ;
+       margin: auto;
+       
+   
     }
     
 }
+
+
+
